@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #2d91cf;;
+    box-sizing: border-box;
+}
+:root{
+    --second: 0deg;
+    --minute: 0deg;
+    --hour: 0deg;
+}
+.clock{
+    display: flex;
+    height:550px;
+    width: 550px;
+    background-color: #2d91cf;
+    position:relative;
+    border-radius: 50%;
+    left:30%;
+    margin-top: 20px;
+    border:10px solid white;
+}
+#twel{
+    display: block;
+    color: aliceblue;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 46%;
+    font-size: 40px;
+    font-weight: 100px;
+    font-family: 'Rubik Marker Hatch', cursive;
+}
+
+#three{color: aliceblue;
+    display: block;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 92%;
+    top: 46%;
+    font-size: 40px;
+    font-weight: 100px;
+    font-family: 'Rubik Marker Hatch', cursive;
+}
+
+#six{
+    color: aliceblue;
+    display: block;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 46%;
+    top: 92%;
+    font-size: 40px;
+    font-weight: 100px;
+    font-family: 'Rubik Marker Hatch', cursive;
+}
+
+#nine{
+    color: aliceblue;
+    display: block;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 2px;
+    top: 45%;
+    font-size: 40px;
+    font-weight: 100px;
+    font-family: 'Rubik Marker Hatch', cursive;
+}
+.hours{
+    display: inline-block;
+    position: absolute;
+    height: 12px;
+    width: 150px;
+    background-color: aliceblue;
+    left: 50%;
+    top: 49.7%;
+    border-radius: 20px;
+    transform: rotate(var(--hour));
+    transform-origin: 0% 0%;
+}
+.minutes{
+    display: inline-block;
+    position: absolute;
+    height: 10px;
+    width:200px;
+    background-color: aliceblue;
+    left: 50%;
+    top: 49.8%;
+    border-radius: 20px;
+    transform: rotate(var(--minute));
+    transform-origin: 0% 0%;
+    
+}
+.seconds{
+    display: inline-block;
+    position: absolute;
+    height:7px;
+    width: 220px;
+    background-color: rgb(52, 54, 56);
+    left: 50%;
+    top: 50%;
+    border-radius: 20px;
+    transform: rotate(var(--second));
+    transform-origin: 0% 0%;
+    
+    
+
+}
+.center{
+    display: inline-block;
+    position: absolute;
+    height: 60px;
+    width:60px;
+    background-color: rgb(57, 42, 42);
+    left: 44%;
+    top: 45%;
+    border-radius: 50%;
+    z-index: 1;
+}
