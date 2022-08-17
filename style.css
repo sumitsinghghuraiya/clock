@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #2d91cf;;
+    background-color: #181e24;
     box-sizing: border-box;
 }
 :root{
@@ -13,12 +13,13 @@
     display: flex;
     height:550px;
     width: 550px;
-    background-color: #2d91cf;
+    background-color: #181e24;
     position:relative;
     border-radius: 50%;
     left:30%;
     margin-top: 20px;
-    border:10px solid white;
+    border:10px solid rgb(170, 17, 201);
+    box-shadow: 0 0 5px rgb(170, 17, 201),0 0 10px rgb(170, 17, 201),0 0 15px rgb(170, 17, 201),0 0 20px rgb(170, 17, 201);
 }
 #twel{
     display: block;
@@ -30,6 +31,7 @@
     font-size: 40px;
     font-weight: 100px;
     font-family: 'Rubik Marker Hatch', cursive;
+    text-shadow: 0 0 5px rgb(170, 17, 201),0 0 10px rgb(170, 17, 201),0 0 15px rgb(170, 17, 201),0 0 20px rgb(170, 17, 201);
 }
 
 #three{color: aliceblue;
@@ -42,6 +44,7 @@
     font-size: 40px;
     font-weight: 100px;
     font-family: 'Rubik Marker Hatch', cursive;
+    text-shadow: 0 0 5px rgb(170, 17, 201),0 0 10px rgb(170, 17, 201),0 0 15px rgb(170, 17, 201),0 0 20px rgb(170, 17, 201);
 }
 
 #six{
@@ -55,10 +58,12 @@
     font-size: 40px;
     font-weight: 100px;
     font-family: 'Rubik Marker Hatch', cursive;
+    text-shadow: 0 0 5px rgb(170, 17, 201),0 0 10px rgb(170, 17, 201),0 0 15px rgb(170, 17, 201),0 0 20px rgb(170, 17, 201);
 }
 
 #nine{
     color: aliceblue;
+    text-shadow: 0 0 5px rgb(170, 17, 201),0 0 10px rgb(170, 17, 201),0 0 15px rgb(170, 17, 201),0 0 20px rgb(170, 17, 201);
     display: block;
     height: 20px;
     border-radius: 50%;
@@ -80,41 +85,44 @@
     border-radius: 20px;
     transform: rotate(var(--hour));
     transform-origin: 0% 0%;
+    box-shadow: 0 0 5px rgb(223, 30, 30),0 0 10px rgb(223, 30, 30),0 0 15px rgb(223, 30, 30),0 0 20px rgb(223, 30, 30);
 }
 .minutes{
     display: inline-block;
     position: absolute;
     height: 10px;
     width:200px;
-    background-color: aliceblue;
+    background-color: rgb(30, 181, 223);
     left: 50%;
     top: 49.8%;
     border-radius: 20px;
     transform: rotate(var(--minute));
     transform-origin: 0% 0%;
-    
+    box-shadow: 0 0 5px rgb(30, 181, 223),0 0 10px rgb(30, 181, 223),0 0 15px rgb(30, 181, 223),0 0 20px rgb(30, 181, 223);
 }
 .seconds{
     display: inline-block;
     position: absolute;
     height:7px;
     width: 220px;
-    background-color: rgb(52, 54, 56);
+    box-shadow: 0 0 5px rgb(170, 17, 201),0 0 10px rgb(170, 17, 201),0 0 15px rgb(170, 17, 201),0 0 20px rgb(170, 17, 201);
+    background-color: aliceblue;
     left: 50%;
     top: 50%;
     border-radius: 20px;
-    transform: rotate(var(--second));
     transform-origin: 0% 0%;
-    
-    
-
+    transform: rotate(var(--second));
+    transition-duration: inherit;
+    transition-timing-function: linear;
 }
 .center{
     display: inline-block;
     position: absolute;
     height: 60px;
     width:60px;
-    background-color: rgb(57, 42, 42);
+    
+    box-shadow: 0 0 5px rgb(170, 17, 201),0 0 10px rgb(170, 17, 201),0 0 15px rgb(170, 17, 201),0 0 20px rgb(170, 17, 201);
+    
     left: 44%;
     top: 45%;
     border-radius: 50%;
